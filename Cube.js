@@ -17,23 +17,29 @@ const Cube = (Size, airResistance, color, context) => {
         color: color,
         airResistance: airResistance,
         Size: Size,
-        vertices: [[Size, Size, Size],
-                   [Size, Size, -1 * Size],
-                   [Size, -1 * Size, -1 * Size],
-                   [Size, -1 * Size, Size],
-                   [-1 * Size, -1 * Size, Size],
-                   [-1 * Size, -1 * Size, -1 * Size],
-                   [-1 * Size, Size, -1 * Size],
-                   [-1 * Size, Size, Size]],
+        vertices: 
+        [
+            [Size, Size, Size],
+            [Size, Size, -1 * Size],
+            [Size, -1 * Size, -1 * Size],
+            [Size, -1 * Size, Size],
+            [-1 * Size, -1 * Size, Size],
+            [-1 * Size, -1 * Size, -1 * Size],
+            [-1 * Size, Size, -1 * Size],
+            [-1 * Size, Size, Size]
+        ],
         SetSize:(size) => {
-            cube.vertices = [[size, size, size],
-                            [size, size, -1 * size],
-                            [size, -1 * size, -1 * size],
-                            [size, -1 * size, size],
-                            [-1 * size, -1 * size, size],
-                            [-1 * size, -1 * size, -1 * size],
-                            [-1 * size, size, -1 * size],
-                            [-1 * size, size, size]];
+            cube.vertices = 
+            [
+                [size, size, size],
+                [size, size, -1 * size],
+                [size, -1 * size, -1 * size],
+                [size, -1 * size, size],
+                [-1 * size, -1 * size, size],
+                [-1 * size, -1 * size, -1 * size],
+                [-1 * size, size, -1 * size],
+                [-1 * size, size, size]
+            ];
             cube.Size = size;
         },
         SetColor: (color) => 
